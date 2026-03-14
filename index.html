@@ -2,38 +2,89 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>HTML Code Anzeige</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spieleabend – Fachschaft IT</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body" class="dark-mode">
 
-<h2>Poster</h2>
-<img src="SpieleabendposterVS.png" alt="Spieleabend Poster" style="max-width:400px;">
+<div id="logo">
+    <img id="logo-dark" src="images/logo_dark.svg" alt="Logo Fachschaft IT">
+    <img id="logo-light" src="images/logo_light.svg" alt="Logo Fachschaft IT">
+</div>
 
-<h2>HTML Code</h2>
-<pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="de" dir="ltr"&gt;
-&lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Events – Fachschaft IT der HS Esslingen&lt;/title&gt;
-&lt;/head&gt;
+<div id="toggle-button">
+    <a onclick="toggleColorMode()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/>
+        </svg>
+    </a>
+</div>
 
-&lt;body&gt;
-    &lt;h1&gt;Spieleabend der Fachschaften IT und SABP&lt;/h1&gt;
+<div id="container">
 
-    &lt;p&gt;&lt;strong&gt;Die Fachschaften IT und SAPB laden zu den Spieleabenden fürs WS25/26 ein!&lt;/strong&gt;&lt;/p&gt;
+<div id="left">
+<img id="poster" src="images/SpieleabendposterVS.png" alt="Plakat Spieleabend">
+</div>
 
-    &lt;p&gt;&lt;strong&gt;Wo:&lt;/strong&gt; Fachschaftsraum F1.-208&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Wer:&lt;/strong&gt; alle Studis der Hochschule Esslingen&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Wann:&lt;/strong&gt; Jeden Mittwoch ab 18:00&lt;/p&gt;
+<div id="right">
 
-    &lt;p&gt;01.10.2025 Erster Spieleabend des Semesters&lt;/p&gt;
-    &lt;p&gt;08.10.2025 Einfach zusammensitzen und Spaß haben&lt;/p&gt;
-    &lt;p&gt;15.10.2025 Gruppenspiele (Werwolf etc.)&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<h1>Spieleabend der Fachschaften IT und SABP</h1>
+
+<p><strong>Die Fachschaften IT und SABP laden zu den Spieleabenden fürs WS25/26 ein!</strong></p>
+
+<p>
+<strong>Wo:</strong> Fachschaftsraum F1.-208<br>
+<strong>Wer:</strong> Alle Studierenden der Hochschule Esslingen<br>
+<strong>Wann:</strong> Jeden Mittwoch ab 18:00
+</p>
+
+<p>01.10.2025 – Erster Spieleabend des Semesters</p>
+<p>08.10.2025 – Einfach zusammensitzen und Spaß haben</p>
+<p>15.10.2025 – Gruppenspiele (Werwolf, Blood on the Clocktower)</p>
+<p>22.10.2025 – Spieleabend</p>
+<p>29.10.2025 – Spieleabend</p>
+<p>05.11.2025 – Spieleabend</p>
+<p>12.11.2025 – Spieleabend</p>
+<p>19.11.2025 – Spieleabend</p>
+<p>26.11.2025 – Spieleabend</p>
+<p>03.12.2025 – Gamesturnier (Mario Kart / Smash Bros)</p>
+<p>10.12.2025 – Spieleabend</p>
+<p>17.12.2025 – Spieleabend</p>
+<p>14.01.2026 – Spieleabend</p>
+<p>21.01.2026 – Letzter Spieleabend vor der Prüfungsphase</p>
+
+<br>
+
+<p>
+Link zur WhatsApp-Gruppe:<br>
+<a href="https://chat.whatsapp.com/EGEjFd0rw0GEWK2ji41Pik">
+https://chat.whatsapp.com/EGEjFd0rw0GEWK2ji41Pik
+</a>
+</p>
+
+<p>
+Der Spieleabend ist perfekt, um bei Brettspielen Kommilitonen kennenzulernen.
+Knabberkram ist vorhanden und Getränke gibt es zum Selbstkostenpreis.
+Eigene Spiele können gerne mitgebracht werden.
+</p>
+
+<p>
+Keine Anmeldung erforderlich – Eintritt frei.
+</p>
+
+<p><strong>Eure Fachschaften IT & SABP</strong></p>
+
+</div>
+</div>
+
+<script>
+function toggleColorMode() {
+    document.getElementById("body").classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 </html>
